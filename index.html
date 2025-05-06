@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3DS Home Menu Mockup</title>
+  <style>
+    body {
+      background: #dfe2e6;
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .top-screen {
+      width: 320px;
+      height: 240px;
+      background: #eceff1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      padding: 10px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .bottom-screen {
+      width: 320px;
+      height: 240px;
+      background: #ffffff;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      padding: 12px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      background: #fafafa;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      text-align: center;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .icon.highlighted {
+      border: 3px solid #00cc66;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-screen">
+    <!-- Top screen mockup icons -->
+    <div class="icon">Friend List</div>
+    <div class="icon">Notifications</div>
+    <div class="icon">Settings</div>
+    <div class="icon">Game Notes</div>
+  </div>
+
+  <div class="bottom-screen">
+    <!-- Bottom screen app icons -->
+    <div class="icon highlighted">Empty</div>
+    <div class="icon">eShop</div>
+    <div class="icon">Friends</div>
+    <div class="icon">Camera</div>
+    <div class="icon">Settings</div>
+    <div class="icon">Mii Maker</div>
+    <div class="icon">Photos</div>
+    <div class="icon">More</div>
+  </div>
+
+</body>
+</html>
